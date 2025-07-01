@@ -38,6 +38,6 @@
     "@antfu/eslint-config": "^4.16.1",
     "@types/uuid": "^10.0.0",
     "bun-types": "latest",
-    "eslint": "^9.30.0"
+    "eslint": "^9.30.1"
   }
 }
