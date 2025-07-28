@@ -1,6 +1,6 @@
 {
   "name": "i3s-server",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A lightweight I3S (Indexed 3D Scene Service) server built with Elysia, designed to serve 3D scene data from SLPK (Scene Layer Package) archives",
   "author": {
     "email": "admin@rikka.cc",
