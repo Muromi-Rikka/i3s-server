@@ -31,7 +31,7 @@
     "destr": "^2.0.5",
     "elysia": "latest",
     "pathe": "^2.0.3",
-    "ufo": "^1.6.1",
+    "ufo": "^1.6.2",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
