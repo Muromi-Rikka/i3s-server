@@ -35,7 +35,7 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.0.1",
+    "@antfu/eslint-config": "^7.1.0",
     "@types/uuid": "^11.0.0",
     "bun-types": "latest",
     "eslint": "^9.39.2"
