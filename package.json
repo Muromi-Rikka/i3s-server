@@ -27,7 +27,7 @@
     "@elysiajs/cors": "^1.4.1",
     "@loaders.gl/i3s": "^4.3.4",
     "@loaders.gl/loader-utils": "^4.3.4",
-    "@loaders.gl/polyfills": "^4.3.4",
+    "@loaders.gl/polyfills": "^4.4.1",
     "destr": "^2.0.5",
     "elysia": "latest",
     "pathe": "^2.0.3",
