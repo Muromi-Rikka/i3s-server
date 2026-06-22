@@ -32,7 +32,7 @@
     "elysia": "latest",
     "pathe": "^2.0.3",
     "ufo": "^1.6.4",
-    "uuid": "^14.0.0"
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.0.0",
