@@ -16,20 +16,20 @@ import { SceneServerRoutes } from "./routes/scene-server.route";
  * 2. Start Elysia server
  * 3. Register scene server routes
  */
-loadArchiveRecord().then(() => {
-  /**
-   * Elysia application instance
-   * Configured with CORS support
-   * Includes root endpoint and scene server routes
-   */
-  const app = new Elysia()
-    .use(cors())
-    .get("/", () => "Hello Elysia")
-    .listen(3000);
+await loadArchiveRecord();
 
-  // Register scene server routes with the application
-  SceneServerRoutes(app);
+/**
+ * Elysia application instance
+ * Configured with CORS support
+ * Includes root endpoint and scene server routes
+ */
+const app = new Elysia()
+  .use(cors())
+  .get("/", () => "Hello Elysia")
+  .listen(3000);
 
-  // eslint-disable-next-line no-console
-  console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`);
-});
+// Register scene server routes with the application
+SceneServerRoutes(app);
+
+// eslint-disable-next-line no-console
+console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`);
