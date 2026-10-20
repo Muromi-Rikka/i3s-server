@@ -1,13 +1,13 @@
 import { renton } from "@renton/eslint-config";
 
 export default renton({
+  jsonc: true,
+  markdown: false,
   stylistic: {
     quotes: "double",
     semi: true,
   },
-  jsonc: true,
   yaml: true,
-  markdown: false,
 }, {
   rules: {
     "antfu/no-top-level-await": "off",

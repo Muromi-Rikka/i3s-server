@@ -73,11 +73,13 @@ export async function loadArchiveRecord(): Promise<void> {
     // eslint-disable-next-line no-console
     const archive = await parseSLPKArchive(new FileHandleFile(file), message => console.log(message));
     const archiveName = filename(file);
-    if (archiveName) {
-      // eslint-disable-next-line no-console
-      console.log(`Archive record loaded: ${archiveName}`);
-      slpkArchiveRecord[archiveName] = archive;
+    if (!archiveName) {
+      continue;
     }
+
+    // eslint-disable-next-line no-console
+    console.log(`Archive record loaded: ${archiveName}`);
+    slpkArchiveRecord[archiveName] = archive;
   }
 }
 
