@@ -10,9 +10,6 @@ export default renton({
   yaml: true,
 }, {
   rules: {
-    "antfu/no-top-level-await": "off",
-    "jsdoc/check-tag-names": "off",
-    "regexp/optimal-quantifier-concatenation": "off",
-    "unicorn/no-computed-property-existence-check": "off",
+    "antfu/no-top-level-await": "off", // src/index.ts:19 Elysia 启动必须 top-level await
   },
 });

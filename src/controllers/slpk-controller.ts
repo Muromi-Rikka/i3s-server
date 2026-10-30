@@ -27,8 +27,8 @@ const slpkArchiveRecord: Record<string, SLPKArchive> = {};
  * @returns Promise resolving to file content (ArrayBuffer) or null if not found
  */
 export async function getArchiveById(id: string, url: string) {
-  const trimmedPath = /^\/?(.*)\/?$/.exec(url);
-  if (trimmedPath && slpkArchiveRecord[id]) {
+  const trimmedPath = /^\/?(.*)$/.exec(url);
+  if (trimmedPath && Object.hasOwn(slpkArchiveRecord, id)) {
     try {
       return await slpkArchiveRecord[id].getFile(trimmedPath[1], "http");
     }
