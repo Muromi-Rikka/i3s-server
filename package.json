@@ -39,7 +39,7 @@
     "@renton/eslint-config": "^2.0.0",
     "@types/uuid": "^11.0.0",
     "bun-types": "latest",
-    "eslint": "^10.14.0",
+    "eslint": "^10.15.0",
     "jiti": "^2.7.0"
   }
 }
